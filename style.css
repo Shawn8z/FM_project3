@@ -1,0 +1,343 @@
+html {
+    background: hsl(0, 0%, 95%);
+    height: 1302px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    top: 77px;
+    margin: auto;
+    width: 281px;
+    height: 1147px;
+}
+h1 {
+    position: relative;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 33.1px;
+    color: hsl(0, 0%, 95%);
+    top: 5px;
+}
+p {
+    position: relative;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    top: 5px;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.sedan_icon, .suv_icon, .luxury_icon {
+    width: 55px;
+    height: auto;
+}
+
+button {
+    position: relative;
+    background: hsl(0, 0%, 95%);
+    border: none;
+    width: 130px;
+    height: 41px;
+    top: 15.8px;
+    border-radius: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    z-index: 1;
+}
+
+.sedan_button {
+    color:hsl(31, 77%, 52%);
+}
+.sedan_tooltip {
+    position: relative;
+    visibility: hidden;
+    width: 220px;
+    height: 73px;
+    top: -110px;
+    left: -11px;
+    background: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+    text-align: center;
+    border-radius: 6px;
+    z-index: 5;
+    box-shadow: 0px 4px 5px -2px hsl(31, 76%, 36%);
+
+    opacity: 0;
+    transition: 0.4s;
+}
+.sedan_tooltip div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.sedan_tooltip p{
+    top: 0px;
+    color: hsl(31, 77%, 52%);
+}
+.sedan_tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-left: -9px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%) transparent transparent transparent;
+}
+.sedan_button:hover + .sedan_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.sedan_button:active {
+    background:hsl(31, 77%, 52%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv_button {
+    color:hsl(184, 100%, 22%);
+}
+.suv_tooltip {
+    position: relative;
+    visibility: visible;
+    width: 220px;
+    height: 73px;
+    top: -110px;
+    left: -11px;
+    background: hsl(0, 0%, 95%);
+    color:hsl(184, 100%, 22%);
+    text-align: center;
+    border-radius: 6px;
+    z-index: 5;
+    box-shadow: 0px 4px 5px -2px hsl(182, 81%, 12%);
+
+    opacity: 0;
+    transition: 0.4s;
+}
+.suv_tooltip div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.suv_tooltip p{
+    top: 0px;
+    color: hsl(184, 100%, 22%);
+}
+.suv_tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-left: -9px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%) transparent transparent transparent;
+}
+.suv_button:hover + .suv_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.suv_button:active {
+    background:hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury_button {
+    color:hsl(179, 100%, 13%);
+}
+.luxury_tooltip {
+    position: relative;
+    visibility: visible;
+    width: 220px;
+    height: 73px;
+    top: -110px;
+    left: -11px;
+    background: hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%);
+    text-align: center;
+    border-radius: 6px;
+    z-index: 5;
+    box-shadow: 0px 4px 5px -2px hsl(177, 78%, 5%);
+
+    opacity: 0;
+    transition: 0.4s;
+}
+.luxury_tooltip div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.luxury_tooltip p{
+    top: 0px;
+    color: hsl(179, 100%, 13%);
+}
+.luxury_tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 33%;
+    margin-left: -9px;
+    border-width: 9px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 95%) transparent transparent transparent;
+}
+.luxury_button:hover + .luxury_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.luxury_button:active {
+    background:hsl(179, 100%, 13%);
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.sedans-inner, .suvs-inner, .luxury-inner {
+    position: relative;
+    width: 70%;
+    top: 42px;
+    margin: auto;
+}
+.sedans {
+    background: hsl(31, 77%, 52%);
+    height: 382px;
+    border-radius: 7px 7px 0 0;
+}
+.suvs {
+    background: hsl(184, 100%, 22%);
+    height: 382px;
+}
+.luxury {
+    background: hsl(179, 100%, 13%);
+    height: 382px;
+    border-radius: 0 0 7px 7px;
+}
+
+@media (min-width: 540px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 550px;
+        top: 120px;
+    }
+
+    .sedans, .suvs, .luxury {
+        width: 33.33%;
+        height: 100%;
+    }
+    .sedans {
+        border-radius: 7px 0 0 7px;
+    }
+    .luxury {
+        border-radius: 0 7px 7px 0;
+    }
+
+    h1 {
+        top: 9px;
+        font-size: 35.8px;
+    }
+    p {
+        top: 9px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.7px;
+    }
+    .luxury p {
+        font-size: 13px;
+        letter-spacing: 0.9px;
+    }
+
+    button {
+        position: absolute;
+        top: 417px;
+    }
+    
+    .sedan_tooltip, .suv_tooltip, .luxury_tooltip {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 325px;
+    }
+}
+
+@media (min-width: 700px) {
+    main {
+        top: 140px;
+        height: 500px;
+    }
+
+    button {
+        position: absolute;
+        top: 360px;
+    }
+
+    .sedan_tooltip, .suv_tooltip, .luxury_tooltip {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 268px;
+    }
+}
+
+@media (min-width: 920px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 156px;
+        width: 919px;
+        height: 456px;
+    }
+
+    .sedans, .suvs, .luxury {
+        width: 33.33%;
+        height: 100%;
+    }
+    .sedans {
+        border-radius: 7px 0 0 7px;
+    }
+    .luxury {
+        border-radius: 0 7px 7px 0;
+    }
+
+    h1 {
+        top: 9px;
+        font-size: 35.8px;
+    }
+    p {
+        top: 9px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.7px;
+    }
+    .luxury p {
+        font-size: 13px;
+        letter-spacing: 0.9px;
+    }
+
+    button {
+        position: relative;
+        top: 68px;
+    }
+    
+    .sedan_tooltip, .suv_tooltip, .luxury_tooltip {
+        width: 240px;
+        height: 80px;
+        position: relative;
+        top: -67px;
+    }
+}
