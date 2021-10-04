@@ -91,6 +91,11 @@ button {
     border-style: solid;
     border-color: hsl(0, 0%, 95%) transparent transparent transparent;
 }
+.sedan_button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(31, 75%, 65%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
 .sedan_button:hover + .sedan_tooltip {
     visibility: visible;
     opacity: 1;
@@ -142,6 +147,11 @@ button {
     border-style: solid;
     border-color: hsl(0, 0%, 95%) transparent transparent transparent;
 }
+.suv_button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(184, 46%, 55%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
 .suv_button:hover + .suv_tooltip {
     visibility: visible;
     opacity: 1;
@@ -192,6 +202,11 @@ button {
     border-width: 9px;
     border-style: solid;
     border-color: hsl(0, 0%, 95%) transparent transparent transparent;
+}
+.luxury_button:hover {
+    color: hsl(0, 0%, 95%);
+    background: hsl(179, 96%, 27%);
+    border: 2px solid hsl(0, 0%, 95%);
 }
 .luxury_button:hover + .luxury_tooltip {
     visibility: visible;
