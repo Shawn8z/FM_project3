@@ -45,7 +45,7 @@ Users should be able to:
 2. how to add tooltips for buttons.
 3. when and where position:realative and position:absolute should be used.
 4. the 'element element' 'div p' Selects all '<p>' elements inside '<div>' elements selector.
-5. the 'element+element' 'div + p' Selects the first '<p>' element that is placed immediately after '<div>' elements selector.
+5. the 'element+element' 'div + p' Selects the first '\<'p'\>' element that is placed immediately after '<div>' elements selector.
 6. z-index is effective only when the element has position:relative, absolute, static.
 
 ### Useful resources
